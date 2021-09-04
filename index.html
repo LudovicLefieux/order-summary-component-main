@@ -11,12 +11,16 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
 
     <title>Frontend Mentor | Order summary card</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
+        position: absolute;
+        bottom: 10px;
         font-size: 11px;
         text-align: center;
       }
@@ -26,9 +30,34 @@
     </style>
   </head>
   <body>
-    Order Summary You can now listen to millions of songs, audiobooks, and
-    podcasts on any device anywhere you like! Annual Plan $59.99/year Change
-    Proceed to Payment Cancel Order
+    <div class="modal">
+      <div class="modal__img"></div>
+      <div class="modal__content">
+        <div class="modal__text">
+          <h1>Order Summary</h1>
+          <p>
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+        </div>
+        <div class="offer">
+          <div class="offer__infos">
+            <div class="offer__icon">
+              <img src="/images/icon-music.svg" alt="music icon" />
+            </div>
+            <div class="offer__text">
+              <p class="offer__title">Annual Plan</p>
+              <p class="offer__price">$59.99/year</p>
+            </div>
+          </div>
+          <a href="#" class="offer__change-link">Change</a>
+        </div>
+        <div class="cta">
+          <a href="#" class="primary-button">Proceed to Payment</a>
+          <a href="#" class="secondary-button">Cancel Order</a>
+        </div>
+      </div>
+    </div>
 
     <div class="attribution">
       Challenge by
