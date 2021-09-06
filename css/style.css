@@ -9,11 +9,13 @@
   --white: #fff;
 }
 
+/****** BASE ******/
+
 body {
   font-family: "Red Hat Display", sans-serif;
-  background: url(../images/pattern-background-desktop.svg) no-repeat
-    var(--neutral-very-pale-blue);
   height: 100vh;
+  background: url(../images/pattern-background-desktop.svg) no-repeat, #e0e8ff;
+  background-size: contain;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,6 +27,8 @@ a {
   text-decoration: none;
   font-weight: 700;
 }
+
+/****** MODAL ******/
 
 .modal {
   display: flex;
@@ -138,9 +142,12 @@ a {
   color: var(--neutral-dark-blue);
 }
 
+/****** RESPONSIVE ******/
+
 @media screen and (max-width: 600px) {
   body {
     padding: 0 25px;
+    background-size: auto;
   }
 
   .modal__content {
